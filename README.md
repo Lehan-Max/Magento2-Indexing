@@ -23,6 +23,7 @@ In Magento2 `Indexing` is used to transform data sush as products, categories to
  2. `Update on Save`:
           Whenever we change any data of entity & save immediately `indexing` will take place & update the date on the storefront.
           
+ https://belvg.com/blog/index-management-in-magento-2.html
  
 
      ![index_indexers_flow](https://user-images.githubusercontent.com/46992129/168738037-6950b7fd-ab72-4c7f-a1b8-b8fe1526e542.png)    
