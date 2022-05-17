@@ -11,6 +11,7 @@ In Magento2 `Indexing` is used to transform data sush as products, categories to
          
          If there are 1 lakh products & if we change data of any 10 products. If indexing is set to update on schedule, how magento gets to know these are the 10 products for which indexing needs to be run?
                 There is a mview.xml. There if we define indexer, we add subscription like which table. If any changes happened to that table then mysql triger will occour and that entity_id will go to the change log table like indexername_cl table and change `indexer status` to `invalid`..In that table we have version_id, entity_id of the table. By using cron we can update the changed entity. There is a table called mview_state, there we get latest version_id.
+                For every table listed in the table nodes, three types of MYSQL AFTER triggers are created: INSERT, UPDATE, DELETE.
          
   `Indexer status`: 
     1. valid - Ready - Data is synchronized, no reindex required.
